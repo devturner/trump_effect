@@ -5,7 +5,7 @@
 class CreateTAlphaReport
 
 def initialize(params)
-
+	
 end
 
 def call
