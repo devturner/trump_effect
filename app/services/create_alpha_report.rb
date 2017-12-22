@@ -2,7 +2,7 @@
 
 #Alpha report class
 
-class CreateTAlphaReport
+class CreateAlphaReport
 
 def initialize(params)
 	
