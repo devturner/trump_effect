@@ -1,8 +1,8 @@
 
 
-#Twitter report class
+#Alpha report class
 
-class CreateTwitterReport
+class CreateTAlphaReport
 
 def initialize(params)
 
