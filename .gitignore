@@ -70,3 +70,7 @@ build-iPhoneSimulator/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 >>>>>>> e789afdbb99aac5a8b0ec5d5bbaf9f2cb018f913
+db/.DS_Store
+.DS_Store
+config/alpha.yml
+config/twitter.yml
