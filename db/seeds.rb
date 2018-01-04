@@ -10,19 +10,9 @@ require 'json'
 
 Tweet.delete_all
 
-# Dir.glob('db/data_source/*.json') do |raw_tweets|
-
-# raw_tweets = File.read('db/data_source/master_2015.json')
-# raw_tweets = File.read('db/data_source/master_2016.json')
-# raw_tweets = File.read('db/data_source/master_2017.json')
-
 	@data = []
 
-	# tweets = JSON.parse (raw_tweets)
-
 	tweets = Dir['db/data_source/*.json'].map { |f| JSON.parse File.read(f) }.flatten
-
-# pry
 
 	tweets.map { |tweet|
 		if tweet["full_text"] == nil
@@ -37,7 +27,6 @@ Tweet.delete_all
 		}
 		@data << object
 	}
-	# pry
 
   Tweet.create!(@data)
-# end
+  
