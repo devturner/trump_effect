@@ -12,11 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20171222003556) do
 
-  create_table "tweets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "from_user_id"
+  create_table "tweets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+    t.bigint "from_user_id"
     t.string "from_user_name"
     t.string "tweet_url"
-    t.string "tweet_full_text"
+    t.text "tweet_full_text", limit: 4294967295
     t.datetime "tweet_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
