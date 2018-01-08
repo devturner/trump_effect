@@ -22,7 +22,7 @@ Tweet.delete_all
 					"from_user_id":        tweet["user"]["id"],
 					"from_user_name":      tweet["user"]["name"],
 					"tweet_url":           "https://twitter.com/i/web/status/#{tweet["id_str"]}",
-					"tweet_full_text":     tweet["full_text"] ,
+					"tweet_full_text":     tweet["full_text"],
 					"tweet_created_at":    tweet["created_at"]
 		}
 		@data << object
