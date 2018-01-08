@@ -1,24 +1,19 @@
-# README
+# Trump Effect
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Collect Donald Trumps tweets and display them on a line graph that correlates with the Dow Jones industrial average, or optionally, any stock symbol the user likes. 
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+* [Twitter](https://github.com/sferik/twitter/) - The Twitter API gem used
+* [Alphavantagerb](https://github.com/StefanoMartin/AlphaVantageRB/) - Alpha Advantage gem used to get stock prices
+* [chart-js-rails](https://github.com/coderbydesign/chart-js-rails/) - Used to generate timeline chart
 
-* System dependencies
+## Authors
 
-* Configuration
+* **Chris Turner** - *Initial work* - [devturner](https://github.com/devturner)
 
-* Database creation
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-* Database initialization
+## License
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
