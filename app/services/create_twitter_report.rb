@@ -1,12 +1,8 @@
-
-
-#Twitter report class
-
 class CreateTwitterReport
 
 def initialize(params)
   @tweets = []
-  @number_of_tweets = 30
+  @number_of_tweets = 100
   @created_times = []
 end
 
@@ -34,6 +30,4 @@ end
       end
       # market_times(@corrected_times)
     end
-
-
 end
