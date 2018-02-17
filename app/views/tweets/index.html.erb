@@ -18,7 +18,7 @@
 
 <h1>Trump Effect</h1>
 
-<%= say -%>
+
 
 <p>Time data only goes back as far as alpha keeps records, after that we can ony get closing prices (need to get date)</p>
 
@@ -45,6 +45,25 @@
     <input type="submit">
   </div>
 </form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tweets</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tweets.order(tweet_created_at: :desc).limit(30).each do |tweet| %>
+      <tr>
+      	<td><%= tweet.tweet_created_at %></td>
+        <td><%= tweet.tweet_full_text %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
 
 <!-- <div id="chart" style="width: 600px; height: 300px;">
 	<canvas id="myChart"></canvas>
